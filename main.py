@@ -6,5 +6,5 @@ model=pickle.load(pickle_in)
 years=st.number_input('YearsExperience')
 if st.button('PREDICT'):
   salary=model.predict([[years]])
-  st.success(f'SALARY PREDICTION IS {SALARY}')
+  st.success(f'SALARY PREDICTION IS {salary}')
 
