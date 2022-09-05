@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 pickle_in=open('SalaryPrediction.pkl','rb')
-model_in=pickle.load(pickle_in)
+model=pickle.load(pickle_in)
 
 years=st.number_input('YearsExperience')
 if st.button('PREDICT'):
